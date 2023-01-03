@@ -1,8 +1,7 @@
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import Layout from "../components/Container";
+import { useId } from "react";
 import Head from "next/head";
+import Projects from "../components/Projects";
+import { projectsArr } from "../config/config";
 
 export default function Home() {
 	return (
@@ -16,7 +15,7 @@ export default function Home() {
 			<div className="flex justify-center w-full">
 				<div
 					className="flex flex-col w-full max-w-3xl px-4
-				mt-20"
+				mt-36 mb-20"
 				>
 					<div className="flex items-center justify-between mb-20">
 						<div className="flex flex-col max-w-md">
@@ -46,71 +45,52 @@ export default function Home() {
 					</div>
 
 					<div className="">
-						<h1 className="text-2xl font-medium mb-6 pb-1 border-b-[1px] border-gray-500">
+						<h1 className="text-3xl font-medium mb-6 pb-1 border-b-[1px] border-gray-500">
 							Projects
 						</h1>
 
-						<div className="grid gap-4 grid-cols-1">
-							<a
-								href="https://github.com/BvChung/ModernfyDesign-frontend"
-								className="p-4 border-gray-500 border-[1px] rounded-md hover:border-gray-600 hover:bg-gray-800 hover:bg-opacity-30 transition-colors"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<h2 className="mb-3 font-semibold">ModernfyDesign Frontend</h2>
-								<p className="text-sm font-semibold text-gray-400 mb-3">
-									Frontend of an online modern furniture store.
-								</p>
-								<div className="flex items-center">
-									<div className="text-sm font-semibold text-gray-400 mr-3">
-										Built with:
-									</div>
-									<div className="flex items-center gap-3">
-										<img
-											className="h-8 w-8"
-											src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-										/>
-										<img
-											className="h-8 w-8"
-											src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg"
-										/>
-									</div>
-								</div>
-							</a>
-
-							<a
-								href="https://github.com/BvChung/ModernfyDesign-frontend"
-								className={styles.card}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<h2>ModernfyDesign Backend</h2>
-								<p>Backend REST API of an online modern furniture store.</p>
-							</a>
-
-							<a
-								href="https://github.com/BvChung/ModernfyDesign-frontend"
-								className={styles.card}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<h2 className="mb-2 font-semibold">Groupcord</h2>
-								<p>Full stack group chat web application.</p>
-							</a>
-
-							<a
-								href="https://github.com/BvChung/ModernfyDesign-frontend"
-								className={styles.card}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<h2>Sticky note</h2>
-								<p>Note taking application.</p>
-							</a>
+						<div className="grid gap-6 grid-cols-1">
+							{projectsArr.map((project) => (
+								<Projects
+									key={useId()}
+									description={project.description}
+									devIconArr={project.devIconArr}
+									demoLink={project.demoLink}
+									githubLink={project.githubLink}
+									title={project.title}
+								/>
+							))}
 						</div>
 					</div>
 				</div>
 			</div>
 		</>
 	);
+}
+
+{
+	/* <a
+	href="https://github.com/BvChung/ModernfyDesign-frontend"
+	className="p-4 border-gray-500 border-[1px] rounded-md hover:border-gray-600 hover:bg-gray-800 hover:bg-opacity-30 transition-colors"
+	target="_blank"
+	rel="noopener noreferrer"
+>
+	<h2 className="mb-3 font-semibold">ModernfyDesign Frontend</h2>
+	<p className="text-sm font-semibold text-gray-400 mb-3">
+		Frontend of an online modern furniture store.
+	</p>
+	<div className="flex items-center">
+		<div className="text-sm font-semibold text-gray-400 mr-3">Built with:</div>
+		<div className="flex items-center gap-3">
+			<img
+				className="h-8 w-8"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+			/>
+			<img
+				className="h-8 w-8"
+				src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg"
+			/>
+		</div>
+	</div>
+</a>; */
 }

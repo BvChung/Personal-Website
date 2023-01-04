@@ -6,7 +6,6 @@ import { useTheme } from "next-themes";
 
 const inter = Inter({
 	subsets: ["latin"],
-	weight: ["400", "500", "600", "700"],
 });
 
 type LayoutProps = {
@@ -25,8 +24,9 @@ export default function Layout({ children }: LayoutProps) {
 			className={`${inter.className} ${
 				isMounted && resolvedTheme === "dark" ? "dark" : "light"
 			} `}
+			data-theme="light"
 		>
-			<div className="bg-gray-50 dark:bg-dark2 min-h-screen h-full">
+			<div className="bg-white dark:bg-dark2 min-h-full h-full">
 				<Nav />
 				{children}
 				{/* <Footer /> */}

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	darkMode: "class",
 	content: [
@@ -7,15 +8,30 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ["Inter var"],
+			},
 			colors: {
-				dark1: "#111111",
-				dark2: "#121212",
+				dark1: "#131316",
+				dark2: "#1C1C21",
 				dark3: "#141414",
 				dark4: "#181818",
-				dark5: "#1c1c1c",
-				dark6: "#343434",
+				dark5: "#18181b",
+				dark6: "#2a2a2d",
+				dark7: "#26262B",
+				gray1: "#5F625E",
+				gray2: "#26262C",
+				bgdark1: "#323748",
+				blue0: "#0069E0",
+				blue1: "#0072F5",
+				blue2: "#0A7CFF",
+				blue3: "#1F87FF",
+				blue4: "#3392FF",
 			},
 		},
+	},
+	daisyui: {
+		themes: ["light"],
 	},
 	plugins: [require("daisyui")],
 };

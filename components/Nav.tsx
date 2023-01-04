@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import navStyles from "../styles/Nav.module.css";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
@@ -14,7 +13,7 @@ export default function Nav() {
 		"py-2 px-3 rounded-md dark:hover:border-gray-100 dark:hover:bg-gray-800";
 
 	return (
-		<header className="bg-gray-50 dark:bg-dark6 dark:bg-opacity-30 w-full fixed top-0">
+		<header className="bg-opacity-80 bg-gray-50 dark:bg-gray2 border-b-[1px] dark:border-dark2 w-full fixed top-0">
 			<div className="flex items-center justify-center">
 				<nav className="flex items-center w-full h-16 py-4 px-2 max-w-3xl">
 					<div className="flex justify-between w-full">
@@ -36,7 +35,7 @@ export default function Nav() {
 							onClick={() => {
 								setTheme(resolvedTheme === "dark" ? "light" : "dark");
 							}}
-							className="flex items-center justify-center rounded-md bg-gray-400 hover:bg-gray-500 dark:bg-gray-700 dark:hover:bg-gray-600 p-2 transition-colors"
+							className="flex items-center justify-center rounded-md bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 p-2 transition-colors"
 						>
 							{isMounted && resolvedTheme === "dark" ? (
 								<svg
@@ -45,7 +44,7 @@ export default function Nav() {
 									viewBox="0 0 24 24"
 									strokeWidth={1.5}
 									stroke="currentColor"
-									className="w-6 h-6"
+									className="w-6 h-6 dark:stroke-white"
 								>
 									<path
 										strokeLinecap="round"
@@ -60,7 +59,7 @@ export default function Nav() {
 									viewBox="0 0 24 24"
 									strokeWidth={1.5}
 									stroke="currentColor"
-									className="w-6 h-6"
+									className="w-6 h-6 stroke-gray-900"
 								>
 									<path
 										strokeLinecap="round"

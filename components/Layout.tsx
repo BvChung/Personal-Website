@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
-import Footer from "./Footer";
 import { Inter } from "@next/font/google";
 import { useTheme } from "next-themes";
 
@@ -29,7 +28,6 @@ export default function Layout({ children }: LayoutProps) {
 			<div className="bg-white dark:bg-dark2 min-h-full h-full">
 				<Nav />
 				{children}
-				{/* <Footer /> */}
 			</div>
 		</main>
 	);

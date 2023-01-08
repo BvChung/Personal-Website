@@ -12,7 +12,7 @@ export default function Projects({
 	return (
 		<div className="flex flex-col gap-4 md:flex-row md:items-center justify-between p-5 md:p-7 bg-white hover:bg-gray-100 dark:bg-gray2 border-gray-200 dark:border-transparent border-[1px] rounded-md dark:hover:border-blue1 hover:border-blue2 hover:bg-opacity-30 shadow-md transition-all">
 			<div>
-				<h2 className="mb-[14px] text-xl font-semibold text-gray-800 dark:text-gray-100">
+				<h2 className="mb-2 text-xl font-semibold text-gray-800 dark:text-gray-100">
 					{title}
 				</h2>
 				<p
@@ -55,7 +55,12 @@ export default function Projects({
 
 			<div className="flex items-center gap-4">
 				<div className="tooltip" data-tip="Source code">
-					<a href={githubLink} target="_blank" rel="noopener noreferrer">
+					<a
+						href={githubLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Link to source code github repository"
+					>
 						<svg
 							viewBox="0 0 24 24"
 							aria-hidden="true"
@@ -73,10 +78,11 @@ export default function Projects({
 				{demoLink && (
 					<a
 						className="btn min-h-0 h-11 w-28 border-0
-						bg-blue1 rounded-md hover:bg-blue2"
+						bg-blue1 rounded-md hover:bg-blue2 shadow-lg hover:shadow-sm transition-all"
 						href={demoLink}
 						target="_blank"
 						rel="noopener noreferrer"
+						aria-label="Link to demo website"
 					>
 						<div className="flex items-center gap-2">
 							<p className="normal-case font-medium text-base text-white">

@@ -1,5 +1,6 @@
 import { ProjectsInfo } from "../types/projectTypes";
 
+// Dev icons links obtained from https://devicon.dev/
 export const projectsArr: ProjectsInfo[] = [
 	{
 		description: "Modern ecommerce furniture store's frontend.",
@@ -68,7 +69,7 @@ export const projectsArr: ProjectsInfo[] = [
 	{
 		description: "Full stack group chat web application.",
 		demoLink: "",
-		githubLink: "https://github.com/BvChung/ModernfyDesign-frontend",
+		githubLink: "https://github.com/BvChung/Groupcord",
 		title: "Groupcord",
 		devIconArr: [
 			{

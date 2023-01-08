@@ -1,4 +1,3 @@
-import { useId } from "react";
 import Head from "next/head";
 import Projects from "../components/Projects";
 import { projectsArr } from "../config/config";
@@ -40,7 +39,8 @@ export default function Home() {
 						<div className="grid gap-6 grid-cols-1">
 							{projectsArr.map((project) => (
 								<Projects
-									key={useId()}
+									key={project.id}
+									id={project.id}
 									description={project.description}
 									devIconArr={project.devIconArr}
 									demoLink={project.demoLink}

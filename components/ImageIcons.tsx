@@ -1,5 +1,6 @@
 import React from "react";
 import { DevIconInfo } from "../types/projectTypes";
+import Image from "next/image";
 
 export default function ImageIcons({ webLink, imgSource, title }: DevIconInfo) {
 	return (
@@ -8,9 +9,15 @@ export default function ImageIcons({ webLink, imgSource, title }: DevIconInfo) {
 				href={webLink}
 				target="_blank"
 				rel="noopener noreferrer"
-				aria-aria-label="Link to developer tool"
+				aria-label="Link to developer tool"
 			>
-				<img className="h-8 w-8" alt="Developer tool icon" src={imgSource} />
+				<Image
+					width={32}
+					height={32}
+					className="h-8 w-8"
+					alt="Developer tool icon"
+					src={imgSource}
+				/>
 			</a>
 		</div>
 	);

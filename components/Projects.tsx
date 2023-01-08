@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import React from "react";
 import ImageIcons from "./ImageIcons";
 import { ProjectsInfo } from "../types/projectTypes";
 
@@ -41,12 +41,13 @@ export default function Projects({
 						</svg>
 					</div>
 					<div className="flex items-center gap-4">
-						{devIconArr.map((el) => (
+						{devIconArr.map((icon) => (
 							<ImageIcons
-								key={useId()}
-								imgSource={el.imgSource}
-								webLink={el.webLink}
-								title={el.title}
+								key={icon.id}
+								id={icon.id}
+								imgSource={icon.imgSource}
+								webLink={icon.webLink}
+								title={icon.title}
 							/>
 						))}
 					</div>

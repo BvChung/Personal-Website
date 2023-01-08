@@ -1,4 +1,5 @@
 export type ProjectsInfo = {
+	id: number;
 	githubLink: string;
 	demoLink: string;
 	title: string;
@@ -7,6 +8,7 @@ export type ProjectsInfo = {
 };
 
 export type DevIconInfo = {
+	id: number;
 	webLink: string;
 	imgSource: string;
 	title: string;

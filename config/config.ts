@@ -42,33 +42,19 @@ export const projectsArr: ProjectsInfo[] = [
 			{
 				id: 1,
 				imgSource:
-					"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-				webLink: "https://reactjs.org/",
-				title: "React",
-			},
-			{
-				id: 2,
-				imgSource:
-					"https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg",
-				webLink: "https://tailwindcss.com/",
-				title: "tailwindcss",
-			},
-			{
-				id: 3,
-				imgSource:
 					"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
 				webLink: "https://nodejs.org/en/",
 				title: "Node.js",
 			},
 			{
-				id: 4,
+				id: 2,
 				imgSource:
 					"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
 				webLink: "https://expressjs.com/",
 				title: "Express",
 			},
 			{
-				id: 5,
+				id: 3,
 				imgSource:
 					"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
 				webLink: "https://www.mongodb.com/",

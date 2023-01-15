@@ -11,7 +11,7 @@ export default function Nav() {
 	return (
 		<header className="bg-opacity-90 bg-white dark:bg-gray2 border-b-[1px] dark:border-dark2 w-full fixed top-0">
 			<div className="flex items-center justify-center">
-				<nav className="flex items-center w-full h-16 py-4 px-2 max-w-3xl">
+				<nav className="flex items-center w-full h-16 py-4 px-4 md:px-2 max-w-3xl">
 					<div className="flex justify-between w-full">
 						<div className="flex items-center gap-5">
 							<a

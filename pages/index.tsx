@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Projects from "../components/Projects";
 import { projectsArr } from "../config/config";
+import homeStyles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
@@ -18,13 +19,13 @@ export default function Home() {
 				>
 					<div className="flex items-center w-full mb-24">
 						<div className="flex flex-col">
-							<p className="text-xl font-bold text-blue1 dark:text-blue4 mb-2">
+							<p className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-2">
 								Hi, my name is
 							</p>
-							<p className="text-5xl font-bold dark:text-white text-gray-900 mb-4">
+							<p className="text-5xl font-bold dark:text-primary6 text-primary2 mb-4">
 								Brandon Chung.
 							</p>
-							<p className="text-gray-600 font-medium dark:text-gray-300 max-w-lg">
+							<p className="text-gray-700 font-medium dark:text-gray-300 max-w-lg">
 								I am an aspiring software engineer and currently a
 								post-baccalaureate CS Major at the University of Houston.
 							</p>
@@ -32,7 +33,7 @@ export default function Home() {
 					</div>
 
 					<div>
-						<h1 className="text-3xl text-gray-900 dark:text-white font-bold mb-6 pb-1 border-b-2 border-gray-200 dark:border-gray-500">
+						<h1 className="text-3xl text-primary1 dark:text-primary7 font-bold mb-6 pb-1 border-b-[1px] border-gray-300 dark:border-gray-500">
 							Projects
 						</h1>
 

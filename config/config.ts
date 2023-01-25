@@ -5,7 +5,7 @@ export const projectsArr: ProjectsInfo[] = [
 	{
 		id: 1,
 		description: "Modern ecommerce furniture store's frontend.",
-		demoLink: "",
+		demoLink: "https://modernfydesign.onrender.com/",
 		githubLink: "https://github.com/BvChung/ModernfyDesign-frontend",
 		title: "ModernfyDesign Frontend",
 		devIconArr: [

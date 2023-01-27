@@ -20,13 +20,13 @@ export default function Projects({
 					{title}
 				</h2>
 				<p
-					className={`text-base font-medium text-gray-600 dark:text-gray-300 mb-4`}
+					className={`text-base font-medium text-gray-600 dark:text-gray-300 mb-6`}
 				>
 					{description}
 				</p>
 
 				<div className="flex items-center gap-5">
-					<div className="tooltip" data-tip="Source code">
+					<div className="tooltip" data-tip="Repository">
 						<a
 							href={githubLink}
 							target="_blank"
@@ -49,32 +49,29 @@ export default function Projects({
 
 					{demoLink && (
 						<a
-							className="btn min-h-0 h-11 w-28 border-0
-						bg-sky-600 hover:bg-sky-500 dark:bg-sky-600 dark:hover:bg-sky-700 rounded-md  shadow-lg hover:shadow-sm transition-all"
+							className="btn min-h-0 normal-case items-center bg-cyan-700 border-cyan-700 hover:border-cyan-600 hover:bg-cyan-600
+							dark:bg-cyan-800 dark:border-cyan-800 dark:hover:border-cyan-700 dark:hover:bg-cyan-700  
+							h-11 rounded shadow-lg hover:shadow-sm w-fit px-6"
 							href={demoLink}
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Link to demo website"
 						>
-							<div className="flex items-center gap-2">
-								<p className="normal-case font-medium text-base text-white">
-									Demo
-								</p>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									strokeWidth={2}
-									stroke="currentColor"
-									className="w-4 h-4 stroke-white"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-									/>
-								</svg>
-							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								strokeWidth={2}
+								stroke="currentColor"
+								className="w-5 h-5 stroke-white mr-2"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+								/>
+							</svg>
+							<p className="text-white font-medium">Live Demo</p>
 						</a>
 					)}
 				</div>

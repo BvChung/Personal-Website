@@ -9,7 +9,7 @@ export default function Nav() {
 	}, []);
 
 	return (
-		<header className="bg-opacity-90 bg-primary1 dark:bg-gray2 border-b-[1px] dark:border-dark2 w-full fixed top-0">
+		<header className="bg-opacity-95 bg-primary1 dark:bg-gray2 border-b-[1px] dark:border-dark2 w-full fixed top-0 z-10">
 			<div className="flex items-center justify-center">
 				<nav className="flex items-center w-full h-16 py-4 px-4 md:px-2 max-w-3xl">
 					<div className="flex justify-between w-full">

@@ -33,7 +33,7 @@ export default function Home() {
 					</div>
 
 					<div>
-						<h1 className="text-3xl text-primary1 dark:text-primary7 font-bold mb-6 pb-1 border-b-[1px] border-gray-300 dark:border-gray-500">
+						<h1 className="text-3xl text-primary1 dark:text-primary6 font-bold mb-6 pb-1 border-b-[1px] border-gray-300 dark:border-gray-500">
 							Projects
 						</h1>
 

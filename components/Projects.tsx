@@ -12,7 +12,7 @@ export default function Projects({
 	return (
 		<div
 			className="flex flex-col gap-4 md:flex-row md:items-center justify-between p-5 md:p-7 bg-white
-			bg-opacity-40 dark:bg-gray2 rounded-sm border-l-8 border-l-primary3 dark:border-l-primary6
+			bg-opacity-40 dark:bg-gray2 rounded-sm border-l-8 border-l-sky-700 dark:border-l-sky-600
 		   hover:bg-opacity-30 shadow-md transition-all"
 		>
 			<div>
@@ -20,7 +20,7 @@ export default function Projects({
 					{title}
 				</h2>
 				<p
-					className={`text-base font-medium text-gray-600 dark:text-gray-300 mb-6`}
+					className={`text-base font-medium max-w-md text-gray-600 dark:text-gray-300 mb-6`}
 				>
 					{description}
 				</p>

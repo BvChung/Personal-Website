@@ -4,6 +4,23 @@ import { ProjectsInfo } from "../types/projectTypes";
 export const projectsArr: ProjectsInfo[] = [
 	{
 		id: 1,
+		description:
+			"Discord leetcode CRUD bot using Google Sheets and Gspread Python API.",
+		demoLink: "",
+		githubLink: "https://github.com/BvChung/leetbot",
+		title: "Leetbot",
+		devIconArr: [
+			{
+				id: 1,
+				imgSource:
+					"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+				webLink: "https://www.python.org/",
+				title: "Python",
+			},
+		],
+	},
+	{
+		id: 2,
 		description: "Modern ecommerce furniture store's frontend.",
 		demoLink: "https://modernfydesign.onrender.com/",
 		githubLink: "https://github.com/BvChung/ModernfyDesign-frontend",
@@ -33,7 +50,7 @@ export const projectsArr: ProjectsInfo[] = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		description: "Modern ecommerce furniture store's backend REST API.",
 		demoLink: "",
 		githubLink: "https://github.com/BvChung/MordernfyDesign-backend",
@@ -63,7 +80,7 @@ export const projectsArr: ProjectsInfo[] = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		description: "Full stack group chat web application.",
 		demoLink: "",
 		githubLink: "https://github.com/BvChung/Groupcord",
@@ -114,7 +131,7 @@ export const projectsArr: ProjectsInfo[] = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		description: "Note taking application.",
 		demoLink: "https://bvchung.github.io/Note-Application/",
 		githubLink: "https://github.com/BvChung/Note-Application",
